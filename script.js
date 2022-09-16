@@ -47,7 +47,7 @@ function useUpperCaseLetters() {
 //}
 
 
-function generatePassword = () {
+function generatePassword () {
   console.log("Button clicked")
   howManyCharacters();
   useLowerCaseLetters();
