@@ -27,11 +27,11 @@ function writePassword() {
 }
 
 
-//
+//password generator
 function generatePassword() {
   console.log("Button clicked")
   howManyCharacters();
-  if (userCharacters < 8 || userCharacters > 128) {                  //alert user to chose number with parameter
+  if (userCharacters < 8 || userCharacters > 128) {                  //alert user to choose number with parameter
     alert("Characters have to be greater than 8 and less than 128");
   };
   useLowerCaseLettersFunction();
@@ -47,37 +47,38 @@ function generatePassword() {
   return result1
 }
 
-
+//User to input number
 function howManyCharacters() {
   userCharacters = parseInt(prompt("How many characters?"));
   console.log(userCharacters)
 };
 
-
+//User to select the use of lowercase letters in password
 function useLowerCaseLettersFunction() {
   lowerCaseUser = confirm("Do you want to use lowercase letters?");
   console.log(lowerCaseUser)
 };
 
-
+//User to select the use of uppercase letters in password
 function useUpperCaseLettersFunction() {
   upperCaseUser = confirm("Do you want to use uppercase letters?");
   console.log(upperCaseUser)
 };
 
-
+//User to select the use of numbers in password
 function useNumbersFunction() {
   numberUser = confirm("Do you want to use numbers?");
   console.log(numberUser)
 };
 
-
+//User to select the use of special characters
 function useSpecialCharactersFunction() {
   specialCharactersUser = confirm("Do you want to use special characters?");
   console.log(specialCharactersUser)
 };
 
 
+//Filters true or false statemnets from user during prompts
 function filter() {
   if (lowerCaseUser === true) {
     emptyArray.push(useLowerCaseLetters)
@@ -94,6 +95,8 @@ function filter() {
   joinStringArray = emptyArray.flat();
 };
 
+
+//Randomizer
 function generatePasswordArray() {
   for (var i = 0; i < userCharacters; i++) {
     var min = 0;
