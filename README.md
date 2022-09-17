@@ -10,3 +10,8 @@ This webpage is a random password generator created to help users make a unique 
 
 # Links
 * [Deployed webpage]https://alexo16.github.io/password-generator/
+* [Repository]https://github.com/AlexO16/password-generator/blob/main/README.md
+
+# Credits
+* [University of Minnesota]https://courses.bootcampspot.com/courses/2176/assignments/38774?module_item_id=750341
+* [Alex Oleynik]https://github.com/AlexO16
