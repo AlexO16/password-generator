@@ -4,7 +4,7 @@ var generateBtn = document.querySelector("#generate");
 //Global variable
 var userCharacters = 12;
 var lowerCaseUser = true;
-var upperCaseuser = false;
+var upperCaseUser = false;
 var numberUser = true;
 var specialCharactersUser = false;
 
@@ -100,9 +100,10 @@ function filter() {
 function generatePasswordArray() {
   for (var i = 0; i < userCharacters; i++) {
     var min = 0;
-  var max = joinStringArray.length;
-  var y = Math.floor(Math.random () * (max - min + 1) + min);
-  passwordArray.push(joinStringArray[y]); }
+    var max = joinStringArray.length;
+    var y = Math.floor(Math.random() * (max - min + 1) + min);
+    passwordArray.push(joinStringArray[y]);
+  }
 
 }
 
